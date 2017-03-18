@@ -1,0 +1,12 @@
+<launch>
+    <arg name="gui" default="True" />
+    <param name="robot_description" textfile="$(find dancing_robot)/urdf/humanoid.urdf" />
+    <param name="use_gui" value="$(arg gui)" />
+    <!-- <node name="kinematics_publisher" pkg="hw2" type="inverse_kinematics.py" output="screen" /> -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+      <param name="use_gui" value="true" />
+    </node>
+    <node name="marker" pkg="hw2" type="marker.py" output="screen"/>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find dancing_robot)/launch/dancing.rviz" required="true"/>
+</launch>
