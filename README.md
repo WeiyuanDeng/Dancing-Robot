@@ -56,6 +56,6 @@ An SVM classifier is trained from the feature vectors to determine the instrumen
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](url) and ![Image1](https://github.com/WeiyuanDeng/test/blob/master/image/front_side_waving.png)
 ```
 
