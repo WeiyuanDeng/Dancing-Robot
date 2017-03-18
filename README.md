@@ -2,7 +2,7 @@
 
 This is a simple algorithm that is able to let a 3D humanoid robot model dance with different songs that is detected.
 
-Currently supports ten songs (more could be added) with only two movement, there will be improvement on different  and more movements soon.
+Currently supports ten songs (more could be added if you like) with only one movement (working on two or three), there will be improvement on different  and more movements soon.
 
 ## Demo (To be continue...)
 
@@ -10,30 +10,24 @@ Currently supports ten songs (more could be added) with only two movement, there
 
 Thanks to Will Drevo's remarkable work, the song learning and classification part in the dancing robot project was an implementation of his work, [Devaju](https://github.com/worldveil/dejavu).
 
-There are ten songs in the 
+There are ten songs in the file, all using Devaju to store the information.
 
 ## Classification
- - numpy
- - scikit-learn (sklearn)
- - librosa
- - glob
-
-## Algorithm
 
 
-### Humanoid Robot URDF
+## Humanoid Robot URDF
 
 This is how the humanoid robot viewed in Rviz.
-
-
-### Movement Capture with Kinect Skeleton Tracking
+### Wave Pose 1
+### Wave Pose 2
+### Wave Pose 3: Movement Capture with Kinect Skeleton Tracking
 
 The Kinect Skeleton Tracking is only for the movement capture for the dancing, it is not mandantory if you are satisfied with the movements I provided.
 
 
-### Dance
+## Dance
 
-An SVM classifier is trained from the feature vectors to determine the instrument it belongs to. 
+An
 
 
 ## To implement...
@@ -57,6 +51,6 @@ An SVM classifier is trained from the feature vectors to determine the instrumen
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-```
 
+![Image1](https://github.com/WeiyuanDeng/test/blob/master/image/front_side_waving.png)
 
