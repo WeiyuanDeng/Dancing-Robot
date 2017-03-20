@@ -4,36 +4,49 @@ This is a simple algorithm that is able to let a 3D humanoid robot model dance w
 
 Currently supports ten songs (more could be added) with only two movement, there will be improvement on different  and more movements soon.
 
-## Demo (To be continue...)
+## Demo Video (To be continue...)
 
-## Dataset
+The project can be divided into two parts. The first part is song learning and classification, the second part is the dance movement capture.
 
-Thanks to Will Drevo's remarkable work, the song learning and classification part in the dancing robot project was an implementation of his work, [Devaju](https://github.com/worldveil/dejavu).
+## Dataset and classification
 
-There are ten songs in the 
+Thanks to Will Drevo's remarkable work, the song learning and classification part in the dancing robot project was an implementation of his work, Dejavu. For more information about Devaju, please see [here](https://github.com/worldveil/dejavu).
 
-## Classification
- - numpy
- - scikit-learn (sklearn)
- - librosa
- - glob
+## Humanoid Robot URDF
 
-## Algorithm
+The description of the humanoid robot is written in [humanoid.urdf](https://github.com/WeiyuanDeng/Dancing-Robot/blob/master/urdf/humanoid.urdf).
+
+This is how the humanoid robot URDF viewed in [Rviz](http://wiki.ros.org/rviz), a 3D visualizer for displaying sensor data and state information from ROS.
+
+![image1](https://github.com/WeiyuanDeng/Dancing-Robot/blob/master/image/robot_waving.png)
+
+![image2](https://github.com/WeiyuanDeng/Dancing-Robot/blob/master/image/front_side_robot.png)
+
+For the test, there are two waving poses.
+
+The graph below is the front view and side view of waving pose 1.
+![waving_pose_1](https://github.com/WeiyuanDeng/Dancing-Robot/blob/master/image/waving1_front_side.png)
+
+The graph below is the front view and side view of waving pose 2.
+
+![waving_pose_2]()
 
 
-### Humanoid Robot URDF
 
-This is how the humanoid robot viewed in Rviz.
+## Dancing Movements
 
+There are mainly two kinds of dancing movements in the project. One is to hard code the joint state, it is only for test at the beginning; the other is using movement capture with Kinect Skeleton Tracking.
+
+### Hard code movements
 
 ### Movement Capture with Kinect Skeleton Tracking
 
 The Kinect Skeleton Tracking is only for the movement capture for the dancing, it is not mandantory if you are satisfied with the movements I provided.
 
 
-### Dance
+## Dance
 
-An SVM classifier is trained from the feature vectors to determine the instrument it belongs to. 
+An
 
 
 ## To implement...
@@ -56,6 +69,8 @@ An SVM classifier is trained from the feature vectors to determine the instrumen
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image1](https://github.com/WeiyuanDeng/test/blob/master/image/front_side_waving.png)
+[Link](url) and ![Image1]
+<img src="\image\waving1.png">
 ```
+
 
